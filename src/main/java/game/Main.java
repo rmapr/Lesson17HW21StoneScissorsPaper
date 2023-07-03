@@ -30,11 +30,11 @@ public class Main {
             Integer playerSubj = service.getPlayerSubj(sc);
             sc.nextLine();
             String playerNameSubj = player.getHand().get(playerSubj).getName();
-            System.out.println("Player - " + playerName + " " + playerNameSubj);
+            System.out.println("Player - " + playerNameSubj);
 
             Integer compSubj = service.computerResult();
-            String compName = computer.getHand().get(compSubj).getName().toUpperCase();
-            System.out.println("Computer - " + compName + " " + compSubj);
+            String compName = computer.getHand().get(compSubj).getName();
+            System.out.println("Computer - " + compName);
 
 
             Integer resultWinner = matrixOfResults.getMatrixOfResult(playerSubj, compSubj);
